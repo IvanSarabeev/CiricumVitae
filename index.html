@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="bg">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV</title>
+    <link rel="shortcut icon" href="/Ivan sarabeev.jpg">
+    <!--Swiper CDN-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <!--Css Link-->
+    <link rel="stylesheet" href="style.css">
+    <!--Box Icon CDN-->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <!--Animated CDN -> Script-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!--Animated Library-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!--FONT Awesome-->
+    <script src="https://kit.fontawesome.com/d4b9f98a5c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,400;0,600;0,700;0,900;1,300;1,800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="animate__animated animate__fadeIn">
+    <!--Header-->
+    <button onclick="topFunction()" class="pop" id="scrollUp"
+        style="display: flex; width: auto; height: auto; font-size: 1em;"><i class='bx bx-up-arrow-alt'></i></button>
+    <script>
+        var mybutton = document.getElementById("scrollUp");
+        window.onscroll = function () {
+            scrollFunction()
+        };
+
+        //Бутона се появява след 700px по вертикала и се показва иначе се скрива
+        function scrollFunction() {
+            if (document.body.scrollTop > 700 || document.documentElement.scrollTop > 700) {
+                mybutton.style.display = "flex";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+
+    </script>
+    <header>
+        <a href="#" class="logo"><img src="/NewIvan-removebg-preview.png" alt=""></a>
+        <div class="bx bx-menu" id="menu-icon"></div>
+        <ul class="navlist">
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#service_two">Education</a></li>
+            <li><a href="#experience">Experience</a></li>
+        </ul>
+    </header>
+    <!----------------- HomeSection--------------------->
+    <section class="home" id="home">
+        <div class="homeContainer">
+            <div class="leftHome">
+                <div class="home-text">
+                    <h2> <span>Hi there,</span> I' m</h2>
+                    <h1>Ivan Saräbeev</h1>
+                    <span class="underArrow">
+                        <div class="leftarrow"></div>a<div class="rightarrow"></div>
+                    </span>
+                    <h5 class="dynamic-container"><span class="text first-text"></span>
+                        <span class="text sec-text" style="margin-left: 40px;">Ice hockey Coach</span>
+                    </h5>
+                    <p class="unReal">
+                        <span style="opacity:0.7;">
+                            <&nbsp;h3>
+                        </span><br><br>&nbsp;&nbsp;&nbsp;&nbsp;Checkout my social media <br>down below:)<br><br>
+                        <span style="opacity:0.7;">
+                            <&nbsp;h3>
+                        </span>
+                    </p>
+                    <div class="social" data-aos="fade-up" data-aos-duration="1000">
+                        <a href="https://www.facebook.com/ivan.sarabeev/"><i class="fa fa-facebook"
+                                aria-hidden="true"></i></a>
+                        <a href="https://www.instagram.com/sarabeev99/"><i class='bx bxl-instagram-alt'></i></a>
+                        <a href="https://www.linkedin.com/in/ivansarabeev/?originalSubdomain=bg"><i
+                                class='bx bxl-linkedin'></i></a>
+                        <a href="https://github.com/IvanSarabeev"><i class='bx bxl-github'></i></a>
+                    </div>
+                    <a href="Ivan_Sarabeev_Resume.pdf" target="_blank" class="test" data-aos="fade-up"
+                        data-aos-duration="1500" data-aos-offset="100" data-aos-easing="ease-in-sine">
+                        <button class="readMore">Download CV</button>
+                        <button class="readMore">Download CV</button>
+                    </a>
+                </div>
+            </div>
+            <!-- RightSide -->
+            <!--Main-Image-->
+            <div class="rightHome">
+                <div class="home-img">
+                    <!-- <img src="ivan_photo-removebg-preview.png" style="width: 100%;" aria-hidden="true"> -->
+                    <img src="Main_Profile_Photo.png" aria-hidden="true" style="width: 100%;">
+                </div>
+            </div>
+        </div>
+        <!-- About Content -->
+        <section class="AboutContentContainer">
+            <article class="aboutContent">
+                <h2 data-aos="fade-up" data-aos-duration="1000">Basic Information</h2>
+                <div class="aboutContainer" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="aboutBox">
+                        <i class="fa fa-phone" aria-hidden="true" style="background-color: #1af20f;"></i>
+                        <h3 class="contentTitle">Phone</h3>
+                        <p class="ContentText"><img src="/smartphone.svg" alt="">+359 894-415-621</p>
+                    </div>
+                    <div class="aboutBox Second">
+                        <i class="fa fa-envelope-o" aria-hidden="true"
+                            style="background-color:rgba(128, 103, 240, 1);;"></i>
+                        <h3 class="contentTitle">Email</h3>
+                        <p class="ContentText"><img src="/email.svg" alt="">ivan.sarabeev99@gmail.com</p>
+                    </div>
+                    <div class="aboutBox">
+                        <i class="fa fa-user-o" aria-hidden="true" style="background-color: var(--main-color);"></i>
+                        <h3 class="contentTitle">Age</h3>
+                        <p class="ContentText"><img src="/time.svg" alt="">23</p>
+                    </div>
+                    <div class="aboutBox">
+                        <i class="fa fa-map-marker" aria-hidden="true"
+                            style="background-color:rgba(128, 103, 240, 1); font-size:26px;"></i>
+                        <h3 class="contentTitle">Address</h3>
+                        <p class="ContentText"><img src="/house.svg" alt=""> Varna, Bulgaria</p>
+                    </div>
+                    <div class="aboutBox">
+                        <i class="fa fa-volume-up" aria-hidden="true" style="background-color: #1af20f;"></i>
+                        <h3 class="contentTitle">Languages</h3>
+                        <p class="ContentText"><img src="/language.svg" alt="">English, Russian</p>
+                    </div>
+                </div>
+            </article>
+        </section>
+    </section>
+    <!-----------------------About_____Section-------------------------------->
+    <section class="about " id="about">
+        <div class="about-img" data-aos="fade-up-right" data-aos-duration="1500">
+            <img src="Ivan_Trophy_Photo-removebg-preview.png" aria-hidden="true">
+        </div>
+        <div class="about-text">
+            <h3 class="about_title" data-aos="fade-down-left" data-aos-duration="1000">Ảbout me</h3>
+            <p data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="1000">
+                &nbsp;&nbsp;Hello, there I'm Ivan Sarabeev - programmer and an athlete. I'm coding from around 1 and a
+                half years,
+                at university and at my spare time.
+                I have knowledge at front-end and back-end programing. I prefer to continue my web journey mainly
+                with front-end.
+                At the moment I'm a active ice hockey player and a assistant coach.
+                The past year I have earn many achievements and honors from international tournaments and other leagues.
+                In my (CV) you can find more information about me. Like for example: Job experience,
+                which apps and languages I'm familiar working with,
+                amount of experience I have and quite more interesting facts about me..
+            </p><a href="Ivan_Sarabeev_Resume.pdf" target="_blank" class="test" data-aos="fade-up"
+                data-aos-duration="1500" data-aos-offset="100" data-aos-easing="ease-in-sine" style="    display: flex;
+    margin-inline: auto;
+    justify-content: center;
+    align-items: center;">
+                <button class="readMore Two" style="background-color: #f23b25;">Download CV</button>
+                <button class="readMore Two" style="color: #f23b25;">Download CV</button>
+            </a>
+            <!-- <div class="info">
+                <a href="" class="test" data-aos="fade-right" data-aos-offset="100" data-aos-easing="ease-in-sine">
+                    <button class="readMore">FeedBack.</button>
+                    <button class="readMore">FeedBack</button>
+                </a>
+                <a href="Ivan_Sarabeev_Resume.pdf" target="_blank" class="test" data-aos="fade-left"
+                    data-aos-offset="100" data-aos-easing="ease-in-sine">
+                    <button class="readMore">Download CV</button>
+                    <button class="readMore">Download CV</button>
+                </a>
+            </div> -->
+        </div>
+    </section>
+    <!---------------------Skills_Section------------------->
+    <section class="main-service" class="skill" id="#skills">
+        <h3 data-aos="flip-up" data-aos-duration="1500">
+            Skills&nbsp;<i style="color: rgba(128, 103, 240, 1); width: auto;" class='bx bx-code-alt'></i>
+            &nbsp;<span style="font-weight: 600;">Knowledge</span></h3>
+        <div class="more-info" data-aos="flip-up" data-aos-easing="ease-out-cubic" data-aos-duration="3500">Hover
+            over the objects to get in touch of
+            what I'm aware.</div>
+        <div class="box" data-aos="zoom-in" data-aos-duration="1500">
+            <div class="item_one">
+                <!--Bars Section-->
+                <div class="chart">
+                    <div class="lang"><a href="#"
+                            title="I have good knowledge in fundamentionals and the all-around components">HTML</a>
+                    </div>
+                    <footer>
+                        <div data-width="95%" class="parameters" style="width: 95%;">90%</div>
+                    </footer>
+                </div>
+                <div class="chart">
+                    <span class="lang"><a href="#"
+                            title="I have good knowledge with the css and I'm currently learning tailwind framework">CSS</a></span>
+                    <footer>
+                        <div data-width="85%" class="parameters" style="width: 85%;">85%</div>
+                    </footer>
+                </div>
+                <div class="chart">
+                    <span class="lang"><a href="#"
+                            title="at the moment I'm doing some researches by watching crash courses and coding everyday">JavaScript</a></span>
+                    <footer>
+                        <div data-width="65" class="parameters" style="width: 65%;">65%</div>
+                    </footer>
+                </div>
+                <div class="chart">
+                    <span class="lang"><a href="#">jQuery</a></span>
+                    <footer>
+                        <div data-width="65" class="parameters" style="width: 65%;">65%</div>
+                    </footer>
+                </div>
+                <div class="chart">
+                    <span class="lang"><a href="#"
+                            title="I have good knowledge about the fundamental methods and models of working">PHP</a></span>
+                    <footer>
+                        <div data-width="60%" class="parameters" style="width: 60%;">60%</div>
+                    </footer>
+                </div>
+                <div class="chart">
+                    <span class="lang"><a href="#"
+                            title="I have quite good knowledge in the area of ​​processing and creating querys">My
+                            SQL</a></span>
+                    <footer>
+                        <div data-width="85%" class="parameters" style="width: 85%;">85%</div>
+                    </footer>
+                </div>
+                <div class="chart">
+                    <span class="lang"><a href="#"
+                            title="Absolutly the same as the upper row, because i have learn - data base in the university">SQL</a></span>
+                    <footer>
+                        <div data-width="75%" class="parameters" style="width: 75%;">75%</div>
+                    </footer>
+                </div>
+                <div class="chart">
+                    <span class="lang"><a href="#" title="I'm currently learning it">TailWind</a></span>
+                    <footer>
+                        <div data-width="55%" class="parameters" style="width: 55%;">55%</div>
+                    </footer>
+                </div>
+            </div>
+            <!--Second Item Section-->
+            <div class="item_two">
+                <div class="chart">
+                    <span class="lang"><a href="#"
+                            title="I use the applications to create and process requests quite often in my university studies">Power
+                            BI</a></span>
+                    <footer>
+                        <div data-width="90%" class="parameters" style="width: 90%;">90%</div>
+                    </footer>
+                </div>
+                <div class="chart">
+                    <span class="lang"><a href="#"
+                            title="Primarily I have used it in the university, with this data administration software">CRM
+                            - Dynamics 365</a></span>
+                    <footer>
+                        <div data-width="70%" class="parameters" style="width: 70%;">70%</div>
+                    </footer>
+                </div>
+                <div class="chart">
+                    <span class="lang"><a href="#" title="I have general knowledge of using it">Ajax</a></span>
+                    <footer>
+                        <div data-width="50%" class="parameters" style="width: 50%;">50%</div>
+                    </footer>
+                </div>
+                <div class="chart">
+                    <span class="lang"><a href="#"
+                            title="I know the conseption, I'm familiar with the syntax, but I don't use it, because i prefer to learn better Css or TailWind">BootStrap</a></span>
+                    <footer>
+                        <div data-width="60%" class="parameters" style="width: 60%;">60%</div>
+                    </footer>
+                </div>
+                <div class="chart">
+                    <span class="lang"><a href="#"
+                            title="I have studied both .NET framework and .NET Core. I have basic knowledge.">.NET &
+                            .NET Core</a></span>
+                    <footer>
+                        <div data-width="75%" class="parameters" style="width: 75%;">75%</div>
+                    </footer>
+                </div>
+                <div class="chart">
+                    <span class="lang"><a href="#" title="I have basic knowledge of the fundamentals">Java</a></span>
+                    <footer>
+                        <div data-width="40%" class="parameters" style="width: 40%;">40%</div>
+                    </footer>
+                </div>
+                <div class="chart">
+                    <span class="lang"><a href="#" title="I have expirience with it in my spare time">Adobe
+                            Photoshop</a></span>
+                    <footer>
+                        <div data-width="55%" class="parameters" style="width: 55%;">55%</div>
+                    </footer>
+                </div>
+                <div class="chart">
+                    <span class="lang"><a href="#"
+                            title="I've read some of it's documentation. Currently under study">VueJs</a></span>
+                    <footer>
+                        <div data-width="40%" class="parameters" style="width: 40%;">40%</div>
+                    </footer>
+                </div>
+            </div>
+        </div>
+        </div>
+        <!------------------End of Charts------------------>
+        <div class="page-skills">
+            <!--First Sub-Box-->
+            <div class="sub-box" data-aos="fade-up-right" data-aos-duration="1500">
+                <div class="sub-img">
+                    <img src="target.svg" alt="">
+                </div>
+                <h3>Precision</h3>
+                <p>I'm trying to make everthing look good, even down to the smallest detail.</p>
+            </div>
+            <!--Second Sub-Box-->
+            <div class="sub-box" data-aos="fade-up" data-aos-duration="1500">
+                <div class="sub-img">
+                    <img src="brush.svg" alt="">
+                </div>
+                <h3>High Quality </h3>
+                <p>I'm using common methods for website development, that work responsive on all devices.</p>
+            </div>
+            <!--Third Sub-Box-->
+            <div class="sub-box" data-aos="fade-up-left" data-aos-duration="1500">
+                <div class="sub-img">
+                    <img src="energy.svg" alt="">
+                </div>
+                <h3>Creative idea's</h3>
+                <p>I'm a person who experiments and tries to get the positive out of everything.</p>
+            </div>
+        </div>
+    </section>
+    <!------------Portfolio------------------------------->
+    <section class="portfolio" id="portfolio">
+        <div class="heading">
+            <h2 class="heading_title" data-aos="fade-up" data-aos-duration="1000">My Projects
+            </h2>
+            <p data-aos="fade-up" data-aos-duration="1500">
+                Here are some of my web projects and others.<br>
+                That I've done over the years.</p>
+        </div>
+        <div class="portfolio-content" data-aos="zoom-out-down" data-aos-duration="1500">
+            <!--Column №1-->
+            <div class="col">
+                <img src="algorithms.png" alt="">
+                <div class="my_layer">
+                    <div class="layer">
+                        <a href="https://github.com/IvanSarabeev/Algorithms-and-Programing-with-C-.git" target="_blank">
+                            <h5 style="pointer-events: none;">Processing Binaries with C#</h5>
+                            <h5 style="margin-top: 0;">(C#, SQL)</h5>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!--Column №2-->
+            <div class="col">
+                <img src="java_project.png" alt="">
+                <a href="https://github.com/IvanSarabeev/Java_Project.git" target="_blank">
+                    <h5 style="pointer-events: none;">Admin Panel</h5>
+                    <h5 style="margin-top: 0;">(JAVA, SQLite)</h5>
+                </a>
+            </div>
+            <!--Column №3-->
+            <div class="col">
+                <img src="/grid-template.png" alt="">
+                <a href="https://github.com/IvanSarabeev/GridPractice.git" target="_blank">
+                    <h5 style="pointer-events: none;">Grid-Template</h5>
+                    <h5 style="margin-top: 0;">CSS, JS</h5>
+                </a>
+            </div>
+            <!--Column №4-->
+            <div class="col">
+                <img src="power_bi.png" alt="">
+                <a href="https://github.com/IvanSarabeev/Developing-a-Information-System.git" target="_blank">
+                    <h5 style="pointer-events: none;">Information System </h5>
+                    <h5 style="margin-top: 0;">(C#, SQL, Power BI)</h5>
+                </a>
+            </div>
+            <!--Column №5-->
+            <div class="col">
+                <img src="cleaning.jpg" alt="">
+                <a href="https://github.com/IvanSarabeev/Website-for-Cleaning-Services.git" target="_blank">
+                    <h5 style="pointer-events: none;">Cleaning Services</h5>
+                    <h5 style="margin-top: 0;">(PHP, MySQL, JS, Ajax)</h5>
+                </a>
+            </div>
+            <!--Column №6-->
+            <div class="col">
+                <img src="about-us.jpg" alt="">
+                <a href="https://github.com/IvanSarabeev/Protein-Bar-Kitchen.git" target="_blank">
+                    <h5 style="pointer-events: none;">Protein Bar & Kitchen</h5>
+                    <h5 style="margin-top: 0;">(HTML, CSS, JS)</h5>
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-------------Education____Section--------------------->
+    <section class="service_two" id="service_two">
+        <div class="heading">
+            <h2 data-aos="fade-up" data-aos-duration="1000">My Education</h2>
+            <p data-aos="fade-up" data-aos-duration="1500">A short list of my education through <br>the years of
+                studying.</p>
+        </div>
+        <div class="service-content">
+            <!--Row №1-->
+            <div class="row" data-aos="fade-up-right" data-aos-offset="300" data-aos-duration="1000"
+                data-aos-easing="ease-in-sine">
+                <div class="s s-one">
+                    <img src="university-economics-varana-bulgaria.jpg" alt="">
+                </div>
+                <h3><strong>University of Economics</strong> - <b>Varna</b></h3>
+                <p>&nbsp;&nbsp;&nbsp;<b>I</b> have studied at the University of Economics - Varna, which is among the
+                    top 5
+                    universities in
+                    Bulgaria.
+                    My path of studying began in September 2018 and graduated in June - 2022, with a bachelor's degree
+                    in "Business Information Systems".
+                    The first 2 years, the subject of study was economically oriented such as: Finances and
+                    accounting concepts.
+                    Тhе last two years we have been fully studying information technology for application development
+                    and their implementation.</p>
+            </div>
+            <!--Row №2-->
+            <div class="row" data-aos="fade-up-right" data-aos-offset="300" data-aos-duration="1000"
+                data-aos-easing="ease-in-sine">
+                <div class="s s-two">
+                    <img src="school.svg" aria-hidden="true">
+                </div>
+                <h3><strong>School for Sports</strong> - <b>Varna</b></h3>
+                <p>&nbsp;&nbsp;&nbsp;<b>I</b> have studied in School for Sports -"G.Benkovski" from 2014 to 2018.
+                    I graduated as a handball coach. I have knowledge in the mechanics and the methodology of the
+                    human body.
+                    I have trained handball for more over 5 years. I have many sports achievements and awards, from both
+                    types individual and team awards over the years,.
+                </p>
+            </div>
+        </div>
+    </section>
+    <!---------------------Work Experience------------------------------------------------>
+    <section id="experience" class="experience">
+        <div class="heading">
+            <h2 data-aos="fade-up" data-aos-duration="1000">Work Experience</h2>
+        </div>
+        <div class="experienceContent">
+            <div class="experienceContainer" data-aos="flip-right" data-aos-duration="1500">
+                <div class="leftContainer">
+                    <img src="target.svg" alt="">
+                    <h4>op varna</h4>
+                    <h5>Jan 2020 - Present</h5>
+                </div>
+                <div class="rightContainer">
+                    <h3><strong>Instructor Specialist</strong> Varna</h3>
+                    <p>Communicating frequently with parents, students
+                        and faculty to provide feedback and discuss
+                        learning style. Shifted between formal and informal methods of
+                        teaching to keep people engaged. Individual approach to customers.
+                    </p>
+                </div>
+            </div>
+            <!-- Row.2 -->
+            <div class="experienceContainer" data-aos="flip-left" data-aos-duration="1500">
+                <div class="leftContainer">
+                    <img src="target.svg" alt="">
+                    <h4>Briella Ltd</h4>
+                    <h5>May 2019 - July 2019</h5>
+                </div>
+                <div class="rightContainer">
+                    <h3><strong>Currency Cashier</strong> Golden Sands</h3>
+                    <p>Exhanged over 30 types of currency. Reporting of avaible funds. Working with reporting book,
+                        working with specialized software for currency exhange. Mostly worked with foreign national
+                        customers.
+                    </p>
+                </div>
+            </div>
+            <!-- Row.3 -->
+            <div class="experienceContainer" data-aos="flip-right" data-aos-duration="1500">
+                <div class="leftContainer">
+                    <img src="target.svg" alt="">
+                    <h4>Tourisum Field</h4>
+                    <h5>June 2018 - October 2018</h5>
+                </div>
+                <div class="rightContainer">
+                    <h3><strong>Ảrea of tourisum</strong> Golden Sands</h3>
+                    <p>I have 5 months of expirience as a <strong>a la carte waiter</strong>
+                        My main duties where serving, cleaning, work with money, and foreign customer services.
+                        Also accounting the avaible funds in the warehouse
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-- Certifications -->
+        <!-- <div class="heading" style="margin-top:50px;">
+            <h2>Certifications</h2>
+        </div>
+        <div class="certificatContainer">
+            <div class="cert-img" id="cert__img">
+            </div>
+            <div class="slider">
+                <img src="images/left-arrow.png" id="prev">
+                <img src="images/right-arrow.png" id="next">
+            </div>
+        </div> -->
+
+    </section>
+    <script>
+        var prev = document.getElementById("prev");
+        var next = document.getElementById("next");
+        var hero = document.getElementById("cert__img");
+        //Creating Array to store Images..!!!
+        var backgroundImg = new Array(
+            "images/mainBG.jpg",
+            "images/bg1.jpg",
+            "images/bg2.jpg",
+            "images/bg3.jpg",
+            "images/bg5.jpg",
+        );
+        let i = 0;
+        next.onclick = function () {
+            if (i < 4) {
+                hero.style.backgroundImage = 'url("' + backgroundImg[i + 1] + '")';
+                thumbnail[i + 1].classList.add("active");
+                thumbnail[i].classList.remove("active");
+                i++;
+            }
+
+        };
+    </script>
+    <!--Animated AOS script-->
+    <script>AOS.init();</script>
+    <!--Scroll JS-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!--JavaScript Code Link-->
+    <script type="text/javascript" src="script.js"></script>
+    <!--Swiper JS-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+</body>
+
+</html>
